@@ -31,4 +31,26 @@
     <java.target.version>1.8</java.target.version>
   </properties>
 
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>external.atlassian.jgitflow</groupId>
+        <artifactId>jgitflow-maven-plugin</artifactId>
+        <version>1.0-m3</version>
+        <configuration>
+          <flowInitContext>
+             <masterBranchName>master</masterBranchName>
+             <developBranchName>develop</developBranchName>
+             <featureBranchPrefix>feature_</featureBranchPrefix>
+             <releaseBranchPrefix>release_</releaseBranchPrefix>
+             <hotfixBranchPrefix>hotfix_</hotfixBranchPrefix>
+             <versionTagPrefix>blither-</versionTagPrefix>
+           </flowInitContext>
+           <autoVersionSubmodules>true</autoVersionSubmodules>
+           <enableSshAgent>true</enableSshAgent>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
