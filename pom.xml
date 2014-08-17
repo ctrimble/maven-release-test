@@ -36,7 +36,7 @@
       <plugin>
         <groupId>external.atlassian.jgitflow</groupId>
         <artifactId>jgitflow-maven-plugin</artifactId>
-        <version>1.0-m3</version>
+        <version>1.0-m4-SNAPSHOT</version>
         <configuration>
           <flowInitContext>
              <masterBranchName>master</masterBranchName>
@@ -48,6 +48,7 @@
            </flowInitContext>
            <autoVersionSubmodules>true</autoVersionSubmodules>
            <enableSshAgent>true</enableSshAgent>
+           <allowSnapshots>true</allowSnapshots>
         </configuration>
       </plugin>
     </plugins>
